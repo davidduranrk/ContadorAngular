@@ -1,0 +1,12 @@
+<h2>Escribe la cantidad de segundos: </h2>
+<input type="text" placeholder="seconds">
+<button>comenzar!</button>
+
+<ng-template #exibirPanelTime>
+  <h1>Quedan : {{seconds}} segundos</h1>
+  <button class="btn btn-primary" (click)="reiniciarContador()">Reiniciar Contador</button>
+</ng-template>
+
+<app-popup #exibirPanelTime *ngIf="exibirPanel">
+
+</app-popup>
